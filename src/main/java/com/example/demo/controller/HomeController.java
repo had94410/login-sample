@@ -9,12 +9,19 @@ public class HomeController {
     // トップページ
     @GetMapping("/")
     public String index() {
+        System.out.println("aaaaaaaaaaaaaaaaaaaa");
         return "redirect:/home";
     }
 
     // ログイン後の画面
     @GetMapping("/home")
     public String home() {
+
         return "home";
     }
+
+//    @GetMapping("/login")
+//    public String login() {
+//        return "login";
+//    }
 }

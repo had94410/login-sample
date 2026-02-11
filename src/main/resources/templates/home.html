@@ -7,6 +7,9 @@
 <body>
 <h1>ログイン成功 🎉</h1>
 <p>ようこそ、ホーム画面です。</p>
+<form th:action="@{/logout}" method="post">
+    <button type="submit">ログアウト</button>
+</form>
 
 <a href="/logout">ログアウト</a>
 </body>
